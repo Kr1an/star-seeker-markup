@@ -1,0 +1,195 @@
+* {
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  max-height:  100vh;
+  overflow: hidden;
+}
+
+.image-buttons {
+  max-height: 10vh;
+  background:#cb3837;
+}
+
+.image-buttons:after {
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+.button {
+  display: block;
+  position: relative;
+  float: left;
+  width: 50%;
+  background:transparent;
+  /*background: blue;*/
+  text-align: center;
+  overflow:hidden;
+}
+
+.button--right {
+  background: transparent;
+  /*background: yellow;*/
+}
+
+.button:hover {
+  background:transparent;
+  /*background: green;*/
+}
+
+.button span {
+  display: inline-block;
+  margin: 0  auto;
+  font-size: 5vh;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+.button label {
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  max-height: 10vh;
+  height: 10vh
+}
+
+.button input[type="file"] {
+  display: none;
+}
+
+.images {
+  display: block;
+  background: #fff;
+  /*background: red;*/
+  height: 60vh;
+  
+}
+
+.images__image {
+  display: block;
+  float: left;
+  width: 48%;
+  min-height: inherit;
+  overflow: hidden;
+  background: transparent;
+  max-height: 58vh;
+  height: 58vh;
+  background: url('./q.jpg');
+  background-position: center;
+  /* Make the background image cover the area of the <div>, and clip the excess */
+  background-size: cover;
+  opacity:0.8;
+  margin: 1vh 1% 1vh 1%;
+  border-radius: 5vh 5vh 5vh 5vh;
+  border: 0px solid #000000;
+  
+}
+
+.images__image--right {
+}
+
+.images__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.images::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.data {
+  max-height: 30vh;
+  height: 30vh;
+  width: 100%;
+  background: #fff;
+  /*background: green;*/
+  display:flex;
+}
+
+.data-element {
+  display: inline-block;
+  font-size: 5vh;
+  flex:1;
+}
+
+.data-element table{
+  color: #313b54;
+}
+table, td, th {    
+    border: 0 solid #ddd;
+    text-align: left;
+    margin: 0 20%;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    height: 29vh;
+    max-height: 29vh;
+    box-sizing: border-box;
+    padding: 0;
+    width:60%;
+    font-family: monospace;
+}
+
+th, td {
+    width:auto;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+th {
+  font-size:3vh;
+  padding-bottom: 2%;
+  padding-top:2%;
+  text-align: center;
+  vertical-align: top;
+  font-weight:normal;
+  color: #000;
+  opacity: 0.8;
+  width:30%;
+  min-width:30%;
+
+}
+td {
+  font-size: 2vh;
+  padding: 0 3%;
+  vertical-align: top;
+  text-align: justify;
+  width:30%;
+  min-width:30%;
+  font-family: monospace;
+  padding-bottom:3%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.input-container span{
+  margin: auto;
+}
+
+.separator{
+  height:0.6vh;
+  margin: 0.2vh 20%;
+  /*margin: 0 20% 0 20%;*/
+  background: black;
+  opacity: 0.5;
+  border: 0px solid #000;
+  border-radius: 10px 10px 10px 10px;
+}
